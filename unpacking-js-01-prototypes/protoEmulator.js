@@ -53,7 +53,7 @@ function protoRunTime(obj_, property) {
 
 let baseGoodbye = {
      h :function(){
-       console.log("hey there! ")
+       console.log("base bye! ")
      },
 
     inheritFrom: null
@@ -61,7 +61,8 @@ let baseGoodbye = {
 
 
 let goodbye = {
-    h: "hello world",
+   // will override base bye
+	h: "Good Bye",
     
     inheritFrom: baseGoodbye
 }
@@ -79,6 +80,6 @@ let Obj ={
 
 protoRunTime(Obj, "hello")
 console.log(protoRunTime(Obj, "init"))
-console.log("actual", protoRunTime(Obj, "h"))
+console.log(protoRunTime(Obj, "h"))
 
 
