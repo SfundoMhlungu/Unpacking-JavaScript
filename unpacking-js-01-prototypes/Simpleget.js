@@ -1,3 +1,4 @@
+// get function emulator
 function get_(obj_, key){
     let type = typeof obj_[key]
 
